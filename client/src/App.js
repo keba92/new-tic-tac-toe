@@ -124,12 +124,15 @@ window.onload = function() {
 };
 
 return (
+  <div className = 'pole'>
+    <h3>{localStorage.getItem('name')}</h3>
     <div className="board">
       <button id="a0"></button> <button id="a1"></button> <button id="a2"></button>
       <button id="b0"></button> <button id="b1"></button> <button id="b2"></button>
       <button id="c0"></button> <button id="c1"></button> <button id="c2"></button>
       <div id="messages">Waiting for opponent to join...</div>
     </div>
+  </div>
   )
 
 }
