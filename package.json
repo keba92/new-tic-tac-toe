@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "cd tic-tac && npm start",
+    "client": "cd client && npm start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
-    "client:build": "cd tic-tac && npm run build",
-    "heroku-postbuild": "cd tic-tac && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "client:build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "",
   "license": "ISC",
